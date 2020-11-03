@@ -1,0 +1,36 @@
+{
+  "name": "karabakhTruths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "antd": "^4.7.3",
+    "firebase": "^8.0.0",
+    "history": "^5.0.0",
+    "javascript-time-ago": "^2.3.2",
+    "material-ui-image": "^3.3.0",
+    "next": "^10.0.0",
+    "next-images": "^1.6.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-slick": "^0.27.12",
+    "react-time-ago": "^6.2.0",
+    "redux": "^4.0.5",
+    "sass": "^1.28.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

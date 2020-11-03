@@ -1,0 +1,457 @@
+// Header SCSS
+// Header SCSS
+$black:#111111;
+$pink:#FF004E;
+
+body {}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  // background: gray;
+  .side {
+    height: 100%;
+
+    // background: yellow;
+    // margin: 0px 1px;
+    .menu-by-red-cirlce {
+      position: relative;
+
+      span {
+        width: 10px;
+        height: 10px;
+        background: $pink;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: white;
+        font-size: 0.5em;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .left,
+  .right {
+    flex: 1;
+  }
+
+  .center {
+    flex: 14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 25px;
+      fill: $black;
+    }
+
+
+
+
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search-by-red-cirlce {
+      position: relative;
+
+      .search-icon {
+        width: 20px;
+        fill: $black;
+      }
+    }
+  }
+}
+
+// Header SCSS
+// Header SCSS
+
+
+
+// MENU SCSS
+.gray {
+  color: gray;
+}
+
+.side-by-side {
+  position: relative;
+  float: left;
+  margin-left: 3em;
+}
+
+.ant-drawer {
+  overflow: auto !important;
+}
+
+#catagories {
+  ul {
+    column-count: 6;
+
+    @media only screen and (max-width: 900px) {
+      column-count: 4;
+    }
+
+    @media only screen and (max-width: 600px) {
+      column-count: 2;
+
+    }
+  }
+}
+
+// MENU SCSS
+// MENU SCSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Search SCSS
+#search-text-field {
+  position: relative;
+  width: 100%;
+  background: white;
+  top: 0px;
+  left: 0px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-sizing: border-box;
+  text-align: center;
+
+  .search-bar-and-button {
+    display: flex;
+    width: 100%;
+
+    .search-bar,
+    .search-button {
+      display: inline-block;
+      height: 30px;
+      margin: 0px 3px;
+    }
+
+    .search-bar {
+      width: 100%;
+
+      input {
+        background: #f6f7fb;
+        outline: none;
+        border: none;
+        padding: 1px;
+        padding-left: 5px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+  }
+
+}
+
+
+#search-result-area {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #f6f7fb;
+  height: 100%;
+
+}
+
+// Search SCSS
+// Search SCSS
+
+
+// Loader SCSS
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 300px;
+  }
+}
+
+// Loader SCSS
+// Loader SCSS
+
+
+// A News Container
+.a-news-container {
+  width: 90%;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .content {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7934524151457458) 12%, rgba(0, 0, 0, 0.208018241476278) 100%);
+    z-index: 3;
+    padding: 1em;
+
+    .texts {
+      position: absolute;
+      bottom: 10px;
+
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 1em;
+      }
+
+      .time {
+        font-size: 1.3em;
+      }
+    }
+
+    * {
+      color: white;
+    }
+  }
+}
+
+#sil-sora {
+  width: 600px;
+  height: 300px;
+}
+
+.image-center {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  position: relative;
+
+  div,
+  img {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+.width {
+
+  div,
+  img {
+    width: 100% !important;
+    height: auto !important;
+
+  }
+}
+
+.height {
+
+  div,
+  img {
+    width: auto !important;
+    height: 100% !important;
+  }
+}
+
+
+.two-news-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .side {
+    height: 100% !important;
+    width: 50% !important;
+    float: left;
+  }
+
+  .image {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .content {
+    padding: 1em;
+
+    .texts {
+      position: relative;
+      height: 100%;
+      padding-bottom: 36px;
+
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+
+      time {
+        bottom: 0;
+        float: left;
+        position: absolute;
+        // font-size: 1.3em;
+      }
+    }
+  }
+
+}
+
+// A News Container
+// A News Container
+
+
+// slider scss
+.a-slider {
+  width: 100%;
+  min-height: 10px;
+  padding: 0px 2em;
+  box-sizing: border-box;
+}
+
+// slider scss
+// slider scss
+
+
+// catagories slider
+#catagories-slider {
+  width: 90%;
+  display: block;
+
+
+  .catagory-item {
+    .title {
+      color: gray;
+      text-align: center;
+      font-size: small;
+      font-weight: bolder;
+      cursor: pointer;
+
+      &:hover {
+        .title {
+          transition: 0.5s ease all;
+          color: black;
+
+        }
+      }
+    }
+
+  }
+}
+
+// catagories slider
+// catagories slider
+
+
+// author slider
+.author {
+  cursor: pointer;
+
+  width: 95%;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+
+  span {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 5px;
+
+    time {
+      font-size: xx-small;
+    }
+
+    h5 {
+      color: white;
+
+    }
+
+    p {
+      font-size: x-small;
+      color: white;
+      margin: 5px 0px;
+    }
+
+    color: white;
+  }
+
+  .profile-photo {
+    position: relative;
+    width: 65px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+  }
+}
+
+// author slider
+// author slider
